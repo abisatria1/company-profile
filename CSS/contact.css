@@ -1,0 +1,162 @@
+/* mayor style */
+body {
+    font-size: 1.1em;
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+    background: black;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.bg-img {
+    position: absolute;
+    background: black url(../Background/kaivan.png);
+    background-position: center;
+    width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+#menu {
+    display: flex;
+    padding: 1.2em;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: 1s;
+    z-index: 1000;
+}
+
+#menu img {
+    height: 40px;
+    width: 200px;
+    text-align: left;
+    flex: 1;
+    transition: 1s;
+}
+
+#menu .tulisan {
+    text-align: right;
+    flex: 1;
+    text-shadow: 0.5px 0.5px 2px rgba(102, 102, 102, 0.37);
+}
+
+#menu .tulisan a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+#menu #contact {
+    color: #FF6600;
+}
+
+#menu:hover {
+    background-color: white;
+    box-shadow: inset 0 2px 6px rgba(39, 39, 39, 0.349);
+}
+
+#menu:hover .tulisan a {
+    color: #666;
+}
+
+#menu:hover #contact {
+    color: #FF6600;
+}
+
+#menu:hover .logo img {
+    height: 50px;
+    width: 250px;
+}
+
+.tulisan a:hover {
+    color: #afafaf;
+    background-color: #ddd;
+}
+
+
+/* section hubungi kami */
+#telpon .judul {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ddd;
+    grid-column: span 4;
+}
+
+#telpon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: max-content;
+    margin: 100px;
+}
+
+#telpon .deskripsi {
+    grid-column: span 4;
+    font-size: 1.2em;
+}
+
+#telpon #wa,
+#telpon .dkp_wa {
+    grid-column: 2;
+}
+
+#telpon #line,
+#telpon .dkp_line {
+    grid-column: 3;
+}
+
+#telpon a {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+
+#telpon #wa,
+#line {
+    font-size: 2em;
+    padding-top: 0;
+}
+
+.dkp_line,
+.dkp_wa {
+    padding: 20px 90px 0 0;
+    margin-top: 80px;
+    display: inline-block;
+    position: relative;
+    top: 38px;
+}
+
+.dkp_wa {
+    left: 15px;
+}
+
+.dkp_line {
+    left: 28px;
+}
+
+#telpon .dkp_line a,
+#telpon .dkp_wa a {
+    color: white;
+    font-size: 1.2em;
+}
+
+#telpon #wa a,
+#telpon #line a {
+    color: #FF6600;
+}
+
+#telpon #wa a i,
+#telpon #line a i {
+    color: #ffffff;
+    font-size: 2em;
+}
